@@ -5,7 +5,26 @@
   box-sizing: border-box;
 }
 
-/* Variáveis Globais */
-/* :root {
+/* Variáveis Globais - Cores */
+:root {
+  --white-background: #FCFFF8;
+  --black-font: #242424;
+  --purple-primary: #64008A;
+  --purple-secondary: #B900FF;
+  --green-primary: #83C73F;
+  --green-secondary: #3B6127;
+  --green-button: #53980E;
+}
 
-} */
+/* Cor de fundo e de texto */
+body {
+  background: var(--white-background);
+  color: var(--black-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
