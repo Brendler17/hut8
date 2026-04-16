@@ -7,13 +7,14 @@
 
 /* Variáveis Globais - Cores */
 :root {
-  --white-background: #FCFFF8;
+  --white: #ffffff;
+  --white-background: #fcfff8;
   --black-font: #242424;
-  --purple-primary: #64008A;
-  --purple-secondary: #B900FF;
-  --green-primary: #83C73F;
-  --green-secondary: #3B6127;
-  --green-button: #53980E;
+  --purple-primary: #64008a;
+  --purple-secondary: #b900ff;
+  --green-primary: #83c73f;
+  --green-secondary: #3b6127;
+  --green-button: #53980e;
 }
 
 /* Cor de fundo e de texto */
@@ -23,8 +24,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body, input, textarea, button {
-  font-family: 'Inter', sans-serif;
+body,
+input,
+textarea,
+button {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
