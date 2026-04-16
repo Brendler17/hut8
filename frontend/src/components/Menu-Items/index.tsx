@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logoHut from '../../assets/logo-hut.svg';
 import styles from './index.module.css';
 
@@ -8,9 +9,9 @@ export function MenuItems() {
         <img src={logoHut} alt="logotipo-hut" />
       </div>
       <div className={styles.menuItemsLinks}>
-        <a href="/">Home</a>
-        <a href="/projects">Projetos</a>
-        <a href="/team">Nossa equipe</a>
+        <Link to="/">Home</Link>
+        <Link to="/projects">Projetos</Link>
+        <Link to="/team">Nossa equipe</Link>
       </div>
       <div className={styles.menuItemsButton}>
         <button type="button">Entre pra hut</button>
