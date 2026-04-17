@@ -1,0 +1,87 @@
+.container {
+  height: 35rem;
+  background: var(--green-primary);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 32px;
+  padding: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 5rem 3rem;
+}
+
+.info h1 {
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: 900;
+  line-height: 95%;
+}
+
+.info p {
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+.info button {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--green-secondary);
+  background: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 32px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.image {
+  position: relative;
+  width: 36rem;
+  height: 33rem;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image h1,
+.image p {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 1.5rem;
+  text-align: center;
+  color: var(--white);
+  z-index: 1;
+}
+
+.image h1 {
+  bottom: 4rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.image p {
+  bottom: 1.5rem;
+  font-size: 1rem;
+}
