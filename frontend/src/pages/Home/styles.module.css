@@ -65,16 +65,43 @@
   margin-top: -21rem;
 }
 
+.about {
+  max-width: 56rem;
+  margin: 4rem auto;
+}
 
+.about h1 {
+  margin: 4rem 0;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 95%;
+}
 
+.timeline {
+  display: flex;
+}
 
+.timeline p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
 
+.timeline span {
+  font-weight: 800;
+}
 
+.timeline img {
+  margin: 0 5rem;
+}
 
+.leftTimeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-
-
-
-
-
-
+.rightTimeline {
+  display: flex;
+  align-items: center;
+}
