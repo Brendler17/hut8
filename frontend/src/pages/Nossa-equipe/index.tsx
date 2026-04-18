@@ -1,5 +1,5 @@
 import { MenuItems } from '../../components/Menu-Items';
-import styles from './styless.module.css';
+import styles from './styles.module.css';
 
 export default function NossaEquipe() {
   return (
