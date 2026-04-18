@@ -3,6 +3,7 @@ import projectImage1 from '../../assets/projects/project1.svg';
 import projectImage2 from '../../assets/projects/project2.svg';
 import projectImage3 from '../../assets/projects/project3.svg';
 import styles from './index.module.css';
+import { PortfolioButton } from '../PortfolioButton';
 
 interface Project {
   name: string;
@@ -55,7 +56,7 @@ export function Carousel() {
           aplicação, estaremos presentes para oferecer a você a melhor
           experiência.
         </p>
-        <button type="button">Confira nosso portfolio</button>
+        <PortfolioButton />
       </div>
       <div className={styles.image}>
         <img src={currentProject.imageSource} alt="imagem-do-projeto" />

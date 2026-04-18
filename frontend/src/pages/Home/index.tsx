@@ -2,6 +2,7 @@ import bannerImage from '../../assets/banner-image.svg';
 import separator from '../../assets/separator.svg';
 import { Carousel } from '../../components/Carousel';
 import { MenuItems } from '../../components/Menu-Items';
+import { PortfolioButton } from '../../components/PortfolioButton';
 import styles from './styles.module.css';
 
 export function Home() {
@@ -18,7 +19,7 @@ export function Home() {
                 por um melhor custo benefício, aproximando jovens universitários
                 do mercado de trabalho.
               </p>
-              <button type="button">Confira nosso portfólio</button>
+              <PortfolioButton />
             </div>
           </div>
         </div>

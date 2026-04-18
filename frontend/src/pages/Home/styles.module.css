@@ -41,17 +41,6 @@
   margin-bottom: 1.875rem;
 }
 
-.bannerContent button {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--green-secondary);
-  background: var(--white);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 32px;
-  cursor: pointer;
-}
-
 .bannerImage {
   position: relative;
 }
