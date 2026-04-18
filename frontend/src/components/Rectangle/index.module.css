@@ -1,50 +1,47 @@
-
 .rectangle {
-
-position: relative;
-overflow: hidden;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-width: 100%;
-margin-top: 20vh;
-height:30vh;
-background: #53980E;
-border-radius: 16px;
-}
-
-
-.rectangle h1{
-position: relative;
-z-index: 1;
-font-family: 'Inter';
-font-style: normal;
-margin: 0;
-text-align: left;
-color: rgb(255, 255, 255);
-font-size: 40px;
+  position: relative;
+  overflow: hidden;
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 0px;
-margin-left: 11rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20vh;
+  height: 30vh;
+  background: #53980e;
+  border-radius: 16px;
 }
-.rectangle p{
-position: relative;
-z-index: 1;
-font-family: 'Inter';
-font-style: normal;
-margin: 0;
-text-align: left;
-color: #FFFFFF;
-display: flex;
-align-items: flex-start;
-padding: 0px;
-gap: 0px;
-width: 30%;
-margin-left: 11rem;
+
+.rectangle h1 {
+  position: relative;
+  z-index: 1;
+  font-family: "Inter";
+  font-style: normal;
+  margin: 0;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 0px;
+  margin-left: 11rem;
+}
+.rectangle p {
+  position: relative;
+  z-index: 1;
+  font-family: "Inter";
+  font-style: normal;
+  margin: 0;
+  text-align: left;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 0px;
+  width: 30%;
+  margin-left: 11rem;
 }
 
 .detalheDireito,
@@ -55,11 +52,9 @@ margin-left: 11rem;
   z-index: 0;
   height: 100%;
   width: 100%;
-;
 }
 
 .detalheDireito {
-  
   left: 40%;
 }
 

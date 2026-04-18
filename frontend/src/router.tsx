@@ -3,10 +3,10 @@ import { Home } from './pages/Home';
 import { Projects } from './pages/projects';
 
 export function Router() {
- return (
-  <Routes>
-    <Route path="/" element={<Home />} /> 
-    <Route path="/projects" element={<Projects />} />
-  </Routes>
-);
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects />} />
+    </Routes>
+  );
 }

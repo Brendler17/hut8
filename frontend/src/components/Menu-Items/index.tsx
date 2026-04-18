@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import logoHut from '../../assets/logo-hut.svg';
 import styles from './index.module.css';
+
 export function MenuItems() {
   return (
     <div className={styles.menuItemsContainer}>
@@ -18,5 +19,3 @@ export function MenuItems() {
     </div>
   );
 }
-
-
