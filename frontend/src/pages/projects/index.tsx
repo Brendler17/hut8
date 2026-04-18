@@ -1,7 +1,10 @@
 import { MenuItems } from '../../components/Menu-Items';
 import { Rectangle } from '../../components/Rectangle';
+import { CarouselProjects } from '../../components/CarouselProjects';
+
 import homestyles from '../Home/styles.module.css';
 import styles from './styles.module.css';
+
 export function Projects() {
   return (
     <div className={homestyles.page}>
@@ -13,6 +16,10 @@ export function Projects() {
           text="Pessoas que confiaram na Hut8 e tiveram sua presença digital renovada"
         />
       </div>
+
+   
+       <CarouselProjects title="Imobiliária Toni Neutzling" text="Imobiliária Toni Neutzling.<br /> <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi. Donec vitae vehicula felis. Sed non sem quis nisl lacinia malesuada eu at ipsum. Praesent id lacus pellentesque, auctor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi." />
+
     </div>
   );
 }
