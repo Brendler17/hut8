@@ -64,7 +64,37 @@ export function Home() {
       </section>
       <div className={styles.container}>
         <Carousel />
+        <section className={styles.servicesContainer}>
+          <h1>Nossos serviços</h1>
+          <div className={styles.services}>
+            <div className={styles.service}>
+              <span>Plataformas web</span>
+              <p>
+                Desenvolvimento de sites, sistemas e lojas virtuais, com as
+                tecnologias mais modernas do mercado
+              </p>
+            </div>
+            <div className={styles.service}>
+              <span>Aplicativo mobile</span>
+              <p>
+                Leve sua empresa para o digital e esteja mais perto de seus
+                clientes por meio de aplicativos para iOS ou Android
+              </p>
+            </div>
+            <div className={styles.service}>
+              <span>Soluções personalizadas</span>
+              <p>
+                Seja para desenvolver uma solução para seu negócio ou tirar uma
+                ideia do papel, estamos prontos para lhe ajudar
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
+      {/*
+      <Component />
+      <Footer />
+      */}
     </div>
   );
 }
