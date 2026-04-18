@@ -1,0 +1,49 @@
+.menuItemsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  padding: 0.625rem 6rem;
+  border-radius: 32px;
+  border: 1px solid rgb(112, 112, 112);
+}
+
+.menuItemsLogo {
+  display: flex;
+}
+
+.menuItemsLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.menuItemsLinks a {
+  font-size: 0.875rem;
+  color: var(--black-font);
+  text-decoration: none;
+  border-radius: 32px;
+  padding: 0.25rem 0.5rem;
+}
+
+.menuItemsLinks a:hover {
+  background-color: #ccf2a6;
+}
+
+.menuItemsButton button {
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  background: linear-gradient(
+    to right,
+    var(--purple-primary),
+    var(--purple-secondary)
+  );
+  cursor: pointer;
+}
+
+.active {
+  background-color: #ccf2a6;
+}

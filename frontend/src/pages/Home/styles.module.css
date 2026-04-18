@@ -1,0 +1,96 @@
+.page {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 76rem;
+  margin: 0.875rem auto;
+  padding: 0 1rem;
+}
+
+.banner {
+  background: linear-gradient(
+    180deg,
+    var(--green-primary) 0%,
+    var(--green-secondary) 60%,
+    var(--green-primary) 100%
+  );
+
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 21rem;
+}
+
+.bannerContent {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  margin-top: 3.75rem;
+  margin-bottom: 3.5rem;
+}
+
+.bannerContent h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.bannerContent p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 1.875rem;
+}
+
+.bannerImage {
+  position: relative;
+}
+
+.bannerImage img {
+  width: 100%;
+}
+
+.content {
+  background: var(--white-background);
+  margin-top: -21rem;
+}
+
+.about {
+  max-width: 56rem;
+  margin: 4rem auto;
+}
+
+.about h1 {
+  margin: 4rem 0;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 95%;
+}
+
+.timeline {
+  display: flex;
+}
+
+.timeline p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.timeline span {
+  font-weight: 800;
+}
+
+.timeline img {
+  margin: 0 5rem;
+}
+
+.leftTimeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightTimeline {
+  display: flex;
+  align-items: center;
+}
