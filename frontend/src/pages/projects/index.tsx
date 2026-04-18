@@ -1,6 +1,7 @@
-import { MenuItems, Rectangle} from '../../components/Menu-Items';
+import { MenuItems} from '../../components/Menu-Items';
 import styles from './styles.module.css';
 import homestyles from '../Home/styles.module.css'
+import { Rectangle } from '../../components/Rectangle';
 export function Projects() {
   return (
     <div className={homestyles.page}>
