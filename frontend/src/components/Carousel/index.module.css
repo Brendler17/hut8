@@ -5,6 +5,7 @@
   grid-template-columns: 1fr 1fr;
   border-radius: 32px;
   padding: 1rem;
+  margin: 7rem 0;
 }
 
 .info {
