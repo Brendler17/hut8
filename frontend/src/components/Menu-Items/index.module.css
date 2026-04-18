@@ -43,3 +43,7 @@
   );
   cursor: pointer;
 }
+
+.active {
+  background-color: #ccf2a6;
+}
