@@ -1,34 +1,92 @@
 .container {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   gap: 4rem;
-
   width: 90%;
- height: 30%;
+  height: 30%;
   padding: 2rem;
 
   border: 2px solid rgb(136, 136, 136);
   border-radius: 16px;
 
-  margin: 0 auto; /* 👈 isso centraliza horizontalmente */
+  margin: 0 auto;
   margin-bottom: 10%;
+  margin-top: 10%;
+}
+.container h1{
+   margin-bottom: 1rem;
+}
+
+.imageWrapper {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .image {
-  width: 40%;
-  aspect-ratio: 1 / 1; /* Define a proporção, a altura será igual à largura */
-  overflow: hidden; /* garante o corte */
+  width: 100%;
+  flex: 1;
+  aspect-ratio: 2 / 2;
+  overflow: hidden; 
   border-radius: 35px;
 }
 
 .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 👈 corta a imagem */
+  object-fit: cover;
 }
 
 .content {
-  max-width: 55%;
-  
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.linkButton {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-top: auto;
+  margin-bottom: 0;
+  background-color: var(--green-button);
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 60px;
+  font-weight: 600;
+  transition: filter 0.2s;
+}
+
+.linkButton:hover {
+  filter: brightness(0.8);
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttonTop{
+  padding: 0.3rem 0.5rem;
+  border: 1.5px solid var(--purple-primary);
+  border-radius: 60px;
+  color: var(--black-font);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.carouselButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: filter 0.2s;
+}
+
+.carouselButton:hover {
+  filter: brightness(0.8);
 }

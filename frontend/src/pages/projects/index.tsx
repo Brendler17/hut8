@@ -18,8 +18,31 @@ export function Projects() {
       </div>
 
    
-       <CarouselProjects title="Imobiliária Toni Neutzling" text="Imobiliária Toni Neutzling.<br /> <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi. Donec vitae vehicula felis. Sed non sem quis nisl lacinia malesuada eu at ipsum. Praesent id lacus pellentesque, auctor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi." />
+       <CarouselProjects 
+         title="Imobiliária Toni Neutzling" 
+         text=" <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi. Donec vitae vehicula felis. Sed non sem quis nisl lacinia malesuada eu at ipsum. Praesent id lacus pellentesque, auctor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi." 
+         link="#"
+         link1="#"
+         link2="#"
+         link3="#"
+       />
+      <CarouselProjects 
+         title="Imobiliária Toni Neutzling" 
+         text=" <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi. Donec vitae vehicula felis. Sed non sem quis nisl lacinia malesuada eu at ipsum. Praesent id lacus pellentesque, auctor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi." 
+         link="#"
+         link1="#"
+         link2="#"
+         link3="#"
+       />
 
+       <CarouselProjects 
+         title="Imobiliária Toni Neutzling" 
+         text=" <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi. Donec vitae vehicula felis. Sed non sem quis nisl lacinia malesuada eu at ipsum. Praesent id lacus pellentesque, auctor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi." 
+         link="#"
+         link1="#"
+         link2="#"
+         link3="#"
+       />
     </div>
   );
 }
