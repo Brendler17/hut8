@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  width: 90%;
+  height: 35vh;
+  padding: 2rem;
+  background: linear-gradient(90deg, #64008A 0%, #B900FF 100%);
+  border-radius: 16px;
+
+  margin: 0 auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  text-align: left;
+}
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  text-align: left;
+  gap: 0.5rem; /* Adiciona um espaço entre os elementos */
+}
+
+.columnRight {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  color: white;
+  text-align: right;
+}
+
+.column h2, .columnRight h2 {
+  font-size: 2rem; 
+}
+
+.column p, .columnRight p {
+  font-size: 1.1rem; 
+}
+
+.email, .phone {
+  display: flex;
+  align-items: center; /* Centraliza o ícone e o texto verticalmente */
+  justify-content: flex-end; /* Empurra o conteúdo do flex para a direita */
+  gap: 8px;
+  color: white; 
+}
+
+.email svg, .phone svg {
+  fill: white; /* Força a cor do ícone para branco */
+}

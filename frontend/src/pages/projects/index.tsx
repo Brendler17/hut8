@@ -1,7 +1,7 @@
 import { MenuItems } from '../../components/Menu-Items';
 import { Rectangle } from '../../components/Rectangle';
 import { CarouselProjects } from '../../components/CarouselProjects';
-
+import { Contato } from '../../components/Contato'
 import homestyles from '../Home/styles.module.css';
 import styles from './styles.module.css';
 import projectImage1 from '../../assets/projects/project1.svg';
@@ -49,7 +49,12 @@ export function Projects() {
          link3="#"
          images={defaultImages}
        />
+
+       <Contato/>
       </div>
+
+
     </div>
+    
   );
 }
