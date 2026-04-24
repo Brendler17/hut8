@@ -29,7 +29,7 @@
 .image {
   width: 100%;
   flex: 1;
-  aspect-ratio: 2 / 2;
+  aspect-ratio: 2.5 / 2.2;
   overflow: hidden; 
   border-radius: 35px;
 }

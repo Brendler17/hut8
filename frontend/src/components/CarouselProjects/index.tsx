@@ -1,7 +1,4 @@
 import { useState } from 'react';
-import projectImage1 from '../../assets/projects/project1.svg';
-import projectImage2 from '../../assets/projects/project2.svg';
-import projectImage3 from '../../assets/projects/project3.svg';
 import passarIcon from '../../assets/passar.svg';
 import voltarIcon from '../../assets/voltar.svg';
 import styles from './index.module.css';
@@ -10,25 +7,23 @@ interface CarouselProjectsProps {
   title: string;
   text: string;
   link: string;
+  link1?: string;
+  link2?: string;
+  link3?: string;
+  images: string[];
 }
 
-export function CarouselProjects({ title, text, link,link1,link2,link3 }: CarouselProjectsProps) {
-
-  const projects = [
-    { image: projectImage1 },
-    { image: projectImage2 },
-    { image: projectImage3 }
-  ];
+export function CarouselProjects({ title, text, link, link1, link2, link3, images }: CarouselProjectsProps) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   function nextImage() {
-    setCurrentIndex((prev) => (prev + 1) % projects.length);
+    setCurrentIndex((prev) => (prev + 1) % images.length);
   }
 
   function prevImage() {
     setCurrentIndex((prev) =>
-      prev === 0 ? projects.length - 1 : prev - 1
+      prev === 0 ? images.length - 1 : prev - 1
     );
   }
 
@@ -41,7 +36,7 @@ export function CarouselProjects({ title, text, link,link1,link2,link3 }: Carous
       </button>
       
       <div className={styles.image}>
-        <img src={projects[currentIndex].image} alt="imagem-do-projeto" />
+        <img src={images[currentIndex]} alt="imagem-do-projeto" />
       </div>
 
       <button className={styles.carouselButton} onClick={nextImage}>
