@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #8E8E8E;
+  border-radius: 90px;
+  padding: 7px 11px;
+  width: fit-content;
+  background-color: var(--white);
+}
+
+.photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.photoPlaceholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: 1px solid #8E8E8E;
+  flex-shrink: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--black-font);
+}
+
+.role {
+  font-size: 0.75rem;
+  color: var(--purple-primary);
+  background-color: #f0d6ff;
+  padding: 2px 8px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.socials {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--purple-primary);
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.socials a:hover {
+  background-color: var(--purple-secondary);
+}
