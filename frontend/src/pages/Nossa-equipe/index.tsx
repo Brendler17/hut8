@@ -1,13 +1,12 @@
+import { Contato } from '../../components/Contato';
+import { MemberCard } from '../../components/MemberCard';
 import { MenuItems } from '../../components/Menu-Items';
 import { Rectangle } from '../../components/Rectangle';
-import { MemberCard } from '../../components/MemberCard';
-import { Contato } from '../../components/Contato';
 import styles from './styles.module.css';
 
 export function NossaEquipe() {
   return (
     <div className={styles.page}>
-
       <div className={styles.container}>
         <MenuItems />
         <Rectangle
@@ -18,8 +17,8 @@ export function NossaEquipe() {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Professores elo</h2>
           <p className={styles.sectionDescription}>
-            Responsáveis pela relação legal da empresa com a faculdade.
-            Realizam um acompanhamento a distância do projeto.
+            Responsáveis pela relação legal da empresa com a faculdade. Realizam
+            um acompanhamento a distância do projeto.
           </p>
           <div className={styles.cards}>
             <MemberCard
@@ -41,7 +40,6 @@ export function NossaEquipe() {
 
         <Contato />
       </div>
-
     </div>
   );
 }
