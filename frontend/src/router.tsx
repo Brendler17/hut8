@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
-import { NossaEquipe } from './pages/Nossa-equipe';
 import { Projects } from './pages/projects';
+import { NossaEquipe } from './pages/Nossa-equipe';
 
 export function Router() {
   return (
