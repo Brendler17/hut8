@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import projectImage1 from '../../assets/projects/project1.svg';
 import projectImage2 from '../../assets/projects/project2.svg';
 import projectImage3 from '../../assets/projects/project3.svg';
-import styles from './index.module.css';
 import { PortfolioButton } from '../PortfolioButton';
+import styles from './index.module.css';
 
 interface Project {
   name: string;
