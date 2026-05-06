@@ -1,6 +1,8 @@
 import bannerImage from '../../assets/banner-image.svg';
 import separator from '../../assets/separator.svg';
 import { Carousel } from '../../components/Carousel';
+import { Contato } from '../../components/Contato';
+import { Footer } from '../../components/Footer';
 import { MenuItems } from '../../components/Menu-Items';
 import { PortfolioButton } from '../../components/PortfolioButton';
 import styles from './styles.module.css';
@@ -90,11 +92,9 @@ export function Home() {
             </div>
           </div>
         </section>
+        <Contato />
       </div>
-      {/*
-      <Component />
       <Footer />
-      */}
     </div>
   );
 }

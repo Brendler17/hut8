@@ -14,8 +14,8 @@
   margin-bottom: 10%;
   margin-top: 10%;
 }
-.container h1{
-   margin-bottom: 1rem;
+.container h1 {
+  margin-bottom: 1rem;
 }
 
 .imageWrapper {
@@ -30,7 +30,7 @@
   width: 100%;
   flex: 1;
   aspect-ratio: 2.5 / 2.2;
-  overflow: hidden; 
+  overflow: hidden;
   border-radius: 35px;
 }
 
@@ -70,7 +70,7 @@
   flex-wrap: wrap;
 }
 
-.buttonTop{
+.buttonTop {
   padding: 0.3rem 0.5rem;
   border: 1.5px solid var(--purple-primary);
   border-radius: 60px;

@@ -9,16 +9,64 @@
 }
 
 .banner {
-  background: linear-gradient(
-    180deg,
-    var(--green-primary) 0%,
-    var(--green-secondary) 60%,
-    var(--green-primary) 100%
-  );
+  background:
+    url("../../assets/brackground-decoration.svg") no-repeat, /* esquerda */
+    linear-gradient(
+      to bottom right,
+      var(--green-primary),
+      var(--green-secondary),
+      var(--green-primary)
+    );
+
+  background-position:
+    left -23.9375rem top 19.125rem,
+    0 0;
+
+  background-size:
+    550px 634px,
+    cover;
 
   position: relative;
   overflow: hidden;
   padding-bottom: 21rem;
+}
+
+/* superior direita */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: -10.25rem;
+  right: -8rem;
+
+  width: 26.75rem;
+  height: 30.875rem;
+
+  background: url("../../assets/brackground-decoration.svg") no-repeat;
+  background-size: contain;
+
+  transform: scaleX(-1);
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* inferior direita */
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 23.4375rem;
+  right: -15rem;
+
+  width: 27.75rem;
+  height: 32rem;
+
+  background: url("../../assets/brackground-decoration.svg") no-repeat;
+  background-size: contain;
+
+  transform: scaleX(-1);
+
+  pointer-events: none;
+  z-index: 0;
 }
 
 .bannerContent {
@@ -57,6 +105,43 @@
 .about {
   max-width: 56rem;
   margin: 4rem auto;
+  position: relative;
+}
+
+/* direita */
+.about::after {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  right: -35rem;
+
+  width: 29.625rem;
+  height: 34.25rem;
+
+  background: url("../../assets/brackground-decoration.svg") no-repeat;
+  background-size: contain;
+
+  transform: scaleX(-1);
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* esquerda */
+.about::before {
+  content: "";
+  position: absolute;
+  top: 20rem;
+  left: -35rem;
+
+  width: 32rem;
+  height: 35.9375rem;
+
+  background: url("../../assets/brackground-decoration.svg") no-repeat;
+  background-size: contain;
+
+  pointer-events: none;
+  z-index: 0;
 }
 
 .about h1 {

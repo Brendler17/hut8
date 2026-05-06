@@ -1,7 +1,7 @@
+import { Contato } from '../../components/Contato';
+import { MemberCard } from '../../components/MemberCard';
 import { MenuItems } from '../../components/Menu-Items';
 import { Rectangle } from '../../components/Rectangle';
-import { MemberCard } from '../../components/MemberCard';
-import { Contato } from '../../components/Contato';
 import { Footer } from '../../components/Footer';
 import styles from './styles.module.css';
 
@@ -18,8 +18,8 @@ export function NossaEquipe() {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Professores elo</h2>
           <p className={styles.sectionDescription}>
-            Responsáveis pela relação legal da empresa com a faculdade.
-            Realizam um acompanhamento a distância do projeto.
+            Responsáveis pela relação legal da empresa com a faculdade. Realizam
+            um acompanhamento a distância do projeto.
           </p>
           <div className={styles.cards}>
             <MemberCard name="Larissa de Freitas" role="área de atuação" instagram="#" linkedin="#" behance="#" />
