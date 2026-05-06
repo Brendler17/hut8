@@ -15,7 +15,6 @@
   flex-direction: column;
 }
 
-
 .section {
   display: flex;
   flex-direction: column;
@@ -43,4 +42,23 @@
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
+}
+
+.associadosDivider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px dashed var(--purple-primary);
+  padding-top: 16px;
+  position: relative;
+}
+
+.associadosDivider span {
+  color: var(--purple-primary);
+  font-size: 1.2rem;
+  background: #fcfff8;
+  padding: 0 8px;
+  position: absolute;
+  top: -14px;
 }

@@ -1,0 +1,79 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--purple-primary);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  font-size: 0.75rem;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.address {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social span {
+  color: var(--white);
+  font-size: 0.875rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--purple-primary);
+  transition: opacity 0.2s;
+}
+
+.socialIcons a:hover {
+  opacity: 0.8;
+}
