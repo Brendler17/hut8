@@ -1,36 +1,74 @@
+import { FaBehance, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+import logo from '../../assets/Group.svg';
 import styles from './index.module.css';
-import logoHut from '../../assets/logo-hut.svg';
-import { InstagramLogo, LinkedinLogo, GithubLogo, BehanceLogo } from '@phosphor-icons/react';
-
 export function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.logo}>
-        <img src={logoHut} alt="logo hut8" />
-        <span>Todos os direitos reservados</span>
-      </div>
+    <div className={styles.container}>
+      <div className={styles.FooterContent}>
+        <div className={styles.LogoFooter}>
+          <img src={logo} alt="Logo" />
+          <p style={{ fontSize: '12px' }}>todos os direitos reservados</p>{' '}
+        </div>
 
-      <nav className={styles.links}>
-        <a href="/">Home</a>
-        <a href="/projects">Projetos</a>
-        <a href="/team">Nossa equipe</a>
-      </nav>
+        <div className={styles.RooterFooter}>
+          {' '}
+          <nav>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? styles.active : '')}
+            >
+              Home
+            </NavLink>
 
-      <address className={styles.address}>
-        Rua Gomes Carneiro, nº 1<br />
-        Centro - CEP: 96010-610<br />
-        Pelotas, RS - Brasil
-      </address>
+            <p>
+              <br />
+            </p>
+            <NavLink
+              to="/projects"
+              className={({ isActive }) => (isActive ? styles.active : '')}
+            >
+              Projetos
+            </NavLink>
 
-      <div className={styles.social}>
-        <span>Encontre nossas redes sociais</span>
-        <div className={styles.socialIcons}>
-          <a href="#" target="_blank" rel="noreferrer"><InstagramLogo size={20} /></a>
-          <a href="#" target="_blank" rel="noreferrer"><LinkedinLogo size={20} /></a>
-          <a href="#" target="_blank" rel="noreferrer"><GithubLogo size={20} /></a>
-          <a href="#" target="_blank" rel="noreferrer"><BehanceLogo size={20} /></a>
+            <p>
+              <br />
+            </p>
+
+            <NavLink
+              to="/team"
+              className={({ isActive }) => (isActive ? styles.active : '')}
+            >
+              Nossa equipe
+            </NavLink>
+          </nav>{' '}
+        </div>
+
+        <div>
+          {' '}
+          <p>Rua Gomes Carneiro, nº 1</p>
+          <p> Centro - CEP: 96010-610</p>
+          <p> Pelotas, RS - Brasil</p>{' '}
+        </div>
+
+        <div className={styles.SocialMedia}>
+          <p>Encontre nossas redes sociais</p>
+          <div className={styles.SocialIcons}>
+            <div className={styles.IconCircle}>
+              <FaInstagram />
+            </div>
+            <div className={styles.IconCircle}>
+              <FaLinkedinIn />
+            </div>
+            <div className={styles.IconCircle}>
+              <FaGithub />
+            </div>
+            <div className={styles.IconCircle}>
+              <FaBehance />
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }

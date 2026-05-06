@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  border: 1px solid #8e8e8e;
+  border: 1px solid #8E8E8E;
   border-radius: 90px;
   padding: 7px 11px;
   width: fit-content;
@@ -23,7 +23,7 @@
   height: 80px;
   border-radius: 50%;
   background-color: var(--white);
-  border: 1px solid #8e8e8e;
+  border: 1px solid #8E8E8E;
   flex-shrink: 0;
 }
 

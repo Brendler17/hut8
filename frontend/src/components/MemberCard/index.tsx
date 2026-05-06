@@ -1,10 +1,5 @@
-import {
-  BehanceLogo,
-  GithubLogo,
-  InstagramLogo,
-  LinkedinLogo,
-} from '@phosphor-icons/react';
 import styles from './index.module.css';
+import { InstagramLogo, GithubLogo, LinkedinLogo, BehanceLogo } from '@phosphor-icons/react';
 
 interface MemberCardProps {
   name: string;
@@ -16,15 +11,7 @@ interface MemberCardProps {
   behance?: string;
 }
 
-export function MemberCard({
-  name,
-  role,
-  photo,
-  instagram,
-  github,
-  linkedin,
-  behance,
-}: MemberCardProps) {
+export function MemberCard({ name, role, photo, instagram, github, linkedin, behance }: MemberCardProps) {
   return (
     <div className={styles.card}>
       {photo ? (
