@@ -1,69 +1,79 @@
-.container {
+.footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  width: 100%;
-  height: 35vh;
-  padding: 2rem;
-  background-color: var(--purple-primary);
-  margin: 0 auto;
-  text-align: left;
-}
-
-.FooterContent {
-  display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 90%;
-  color: white;
+  background-color: var(--purple-primary);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+  gap: 2rem;
 }
 
-.RooterFooter a {
+.logo {
   display: flex;
-  color: white;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  font-size: 0.75rem;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.links a {
+  color: var(--white);
   text-decoration: none;
-  text-align: left;
+  font-size: 0.875rem;
 }
 
-.LogoFooter {
+.links a:hover {
+  text-decoration: underline;
+}
+
+.address {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.social {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  gap: 8px;
 }
 
-.LogoFooter img {
-  width: 15vh;
-  margin-bottom: 10px;
+.social span {
+  color: var(--white);
+  font-size: 0.875rem;
 }
 
-.SocialMedia {
+.socialIcons {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  gap: 8px;
 }
 
-.SocialIcons {
-  display: flex;
-  gap: 15px;
-}
-
-.IconCircle {
+.socialIcons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5svh;
-  height: 5svh;
-  background-color: white;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
+  background-color: white;
   color: var(--purple-primary);
-  font-size: 20px;
-  cursor: pointer;
   transition: opacity 0.2s;
 }
 
-.IconCircle:hover {
+.socialIcons a:hover {
   opacity: 0.8;
 }
