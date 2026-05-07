@@ -1,5 +1,7 @@
 .page {
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .container {
@@ -8,27 +10,40 @@
   padding: 0 1rem;
 }
 
-.banner {
-  background:
-    url("../../assets/brackground-decoration.svg") no-repeat, /* esquerda */
-    linear-gradient(
-      to bottom right,
-      var(--green-primary),
-      var(--green-secondary),
-      var(--green-primary)
-    );
+/* direita */
+.page::after {
+  content: "";
+  position: absolute;
+  top: 55rem;
+  right: -18rem;
 
-  background-position:
-    left -23.9375rem top 19.125rem,
-    0 0;
+  width: 29.625rem;
+  height: 34.25rem;
 
-  background-size:
-    550px 634px,
-    cover;
+  background: url("../../assets/brackground-decoration.svg") no-repeat;
+  background-size: contain;
 
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 21rem;
+  transform: scaleX(-1);
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* esquerda */
+.page::before {
+  content: "";
+  position: absolute;
+  top: 85rem;
+  left: -18rem;
+
+  width: 32rem;
+  height: 35.9375rem;
+
+  background: url("../../assets/brackground-decoration.svg") no-repeat;
+  background-size: contain;
+
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* superior direita */
@@ -69,11 +84,35 @@
   z-index: 0;
 }
 
+.banner {
+  background:
+    url("../../assets/brackground-decoration.svg") no-repeat, /* esquerda */
+    linear-gradient(
+      to bottom right,
+      var(--green-primary),
+      var(--green-secondary),
+      var(--green-primary)
+    );
+
+  background-position:
+    left -23.9375rem top 19.125rem,
+    0 0;
+
+  background-size:
+    550px 634px,
+    cover;
+
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 21rem;
+}
+
 .bannerContent {
   display: grid;
   grid-template-columns: 70% 1fr;
   margin-top: 3.75rem;
   margin-bottom: 3.5rem;
+  position: relative;
 }
 
 .bannerContent h1 {
@@ -91,6 +130,7 @@
 
 .bannerImage {
   position: relative;
+  z-index: 1;
 }
 
 .bannerImage img {
@@ -105,43 +145,6 @@
 .about {
   max-width: 56rem;
   margin: 4rem auto;
-  position: relative;
-}
-
-/* direita */
-.about::after {
-  content: "";
-  position: absolute;
-  top: -3rem;
-  right: -35rem;
-
-  width: 29.625rem;
-  height: 34.25rem;
-
-  background: url("../../assets/brackground-decoration.svg") no-repeat;
-  background-size: contain;
-
-  transform: scaleX(-1);
-
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* esquerda */
-.about::before {
-  content: "";
-  position: absolute;
-  top: 20rem;
-  left: -35rem;
-
-  width: 32rem;
-  height: 35.9375rem;
-
-  background: url("../../assets/brackground-decoration.svg") no-repeat;
-  background-size: contain;
-
-  pointer-events: none;
-  z-index: 0;
 }
 
 .about h1 {
