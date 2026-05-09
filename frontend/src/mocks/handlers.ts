@@ -107,20 +107,32 @@ const projects = [
     name: 'Imobiliária Toni Neutzling',
     description:
       'Visualização e filtros para imóveis disponíveis para venda, locação ou temporada.',
-    image: 'project1',
+    images: ['project1', 'project2', 'project3'],
+    link: '#',
+    link1: '#',
+    link2: '#',
+    link3: '#',
   },
   {
     id: 2,
     name: 'Pastejando',
     description:
       'App desenvolvido em parceria com a Embrapa que realiza cálculos em relação a plantações, hectares e cuidado dos animais',
-    image: 'project2',
+    images: ['project2'],
+    link: '#',
+    link1: '#',
+    link2: '#',
+    link3: '#',
   },
   {
     id: 3,
     name: 'Plante Saúde',
     description:
       'Desenvolvido com o objetivo de auxiliar a identificação de plantas medicinais, para o tratamento de sintomas clínicos.',
-    image: 'project3',
+    images: ['project3'],
+    link: '#',
+    link1: '#',
+    link2: '#',
+    link3: '#',
   },
 ];

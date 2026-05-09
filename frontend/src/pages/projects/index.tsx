@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import projectImage1 from '../../assets/projects/project1.svg';
 import projectImage2 from '../../assets/projects/project2.svg';
 import projectImage3 from '../../assets/projects/project3.svg';
@@ -6,11 +7,33 @@ import { Contato } from '../../components/Contato';
 import { Footer } from '../../components/Footer';
 import { MenuItems } from '../../components/Menu-Items';
 import { Rectangle } from '../../components/Rectangle';
+import { getProjects } from '../../services/api';
 import homestyles from '../Home/styles.module.css';
 import styles from './styles.module.css';
 
+const projectImages = {
+  project1: projectImage1,
+  project2: projectImage2,
+  project3: projectImage3,
+};
+
+interface Project {
+  id: number;
+  name: string;
+  description: string;
+  images: (keyof typeof projectImages)[];
+  link?: string;
+  link1?: string;
+  link2?: string;
+  link3?: string;
+}
+
 export function Projects() {
-  const defaultImages = [projectImage1, projectImage2, projectImage3];
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    getProjects().then(setProjects).catch(console.error);
+  }, []);
 
   return (
     <div className={homestyles.page}>
@@ -22,34 +45,18 @@ export function Projects() {
           text="Pessoas que confiaram na Hut8 e tiveram sua presença digital renovada"
         />
 
-        <CarouselProjects
-          title="Imobiliária Toni Neutzling"
-          text=" <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi. Donec vitae vehicula felis. Sed non sem quis nisl lacinia malesuada eu at ipsum. Praesent id lacus pellentesque, auctor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi."
-          link="#"
-          link1="#"
-          link2="#"
-          link3="#"
-          images={defaultImages}
-        />
-        <CarouselProjects
-          title="Imobiliária Toni Neutzling"
-          text=" <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi. Donec vitae vehicula felis. Sed non sem quis nisl lacinia malesuada eu at ipsum. Praesent id lacus pellentesque, auctor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi."
-          link="#"
-          link1="#"
-          link2="#"
-          link3="#"
-          images={defaultImages}
-        />
-
-        <CarouselProjects
-          title="Imobiliária Toni Neutzling"
-          text=" <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi. Donec vitae vehicula felis. Sed non sem quis nisl lacinia malesuada eu at ipsum. Praesent id lacus pellentesque, auctor augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod diam eget mi sagittis cursus. Praesent ullamcorper vitae est sed porttitor. Aliquam non ullamcorper purus. Etiam finibus felis eget pretium rhoncus. Nunc nec ornare nisi."
-          link="#"
-          link1="#"
-          link2="#"
-          link3="#"
-          images={defaultImages}
-        />
+        {projects.map((project) => (
+          <CarouselProjects
+            key={project.id}
+            title={project.name}
+            text={project.description}
+            link={project.link || '#'}
+            link1={project.link1}
+            link2={project.link2}
+            link3={project.link3}
+            images={project.images.map((img) => projectImages[img])}
+          />
+        ))}
 
         <Contato />
       </div>

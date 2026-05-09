@@ -6,13 +6,16 @@
   width: 90%;
   height: 30%;
   padding: 2rem;
+  background-color: #ffffff;
 
-  border: 2px solid rgb(136, 136, 136);
+  border: 2px solid rgb(227, 221, 221);
   border-radius: 16px;
 
   margin: 0 auto;
   margin-bottom: 10%;
   margin-top: 10%;
+  position: relative;
+  z-index: 10;
 }
 .container h1 {
   margin-bottom: 1rem;
