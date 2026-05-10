@@ -8,6 +8,7 @@ Projeto frontend desenvolvido em React com TypeScript para o site da Hut8, empre
 - TypeScript
 - Vite
 - CSS Modules
+- Mock Service Worker
 
 ## 📦 Instalação
 
