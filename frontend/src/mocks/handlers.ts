@@ -17,9 +17,9 @@ const team = [
     role: 'teachers',
     areaOfActivity: 'Área de atuação',
     social: {
-      instagram: '',
-      linkedin: '',
-      github: '',
+      instagram: '#',
+      linkedin: '#',
+      github: '#',
     },
   },
   {
@@ -28,9 +28,9 @@ const team = [
     role: 'teachers',
     areaOfActivity: 'Coordenador Design UFPel',
     social: {
-      instagram: '',
-      linkedin: '',
-      github: '',
+      instagram: '#',
+      linkedin: '#',
+      github: '#',
     },
   },
   {
@@ -39,9 +39,9 @@ const team = [
     role: 'directors',
     areaOfActivity: 'Diretor Geral',
     social: {
-      instagram: '',
-      linkedin: '',
-      github: '',
+      instagram: '#',
+      linkedin: '#',
+      github: '#',
     },
   },
   {
@@ -50,9 +50,9 @@ const team = [
     role: 'directors',
     areaOfActivity: 'Área de atuação',
     social: {
-      instagram: '',
-      linkedin: '',
-      github: '',
+      instagram: '#',
+      linkedin: '#',
+      github: '#',
     },
   },
   {
@@ -61,9 +61,9 @@ const team = [
     role: 'directors',
     areaOfActivity: 'Área de atuação',
     social: {
-      instagram: '',
-      linkedin: '',
-      github: '',
+      instagram: '#',
+      linkedin: '#',
+      github: '#',
     },
   },
   {
@@ -72,9 +72,9 @@ const team = [
     role: 'associated',
     areaOfActivity: 'Designer',
     social: {
-      instagram: '',
-      linkedin: '',
-      github: '',
+      instagram: '#',
+      linkedin: '#',
+      github: '#',
     },
   },
   {
@@ -83,9 +83,9 @@ const team = [
     role: 'associated',
     areaOfActivity: 'Designer',
     social: {
-      instagram: '',
-      linkedin: '',
-      github: '',
+      instagram: '#',
+      linkedin: '#',
+      github: '#',
     },
   },
   {
@@ -94,9 +94,9 @@ const team = [
     role: 'associated',
     areaOfActivity: 'Designer',
     social: {
-      instagram: '',
-      linkedin: '',
-      github: '',
+      instagram: '#',
+      linkedin: '#',
+      github: '#',
     },
   },
 ];

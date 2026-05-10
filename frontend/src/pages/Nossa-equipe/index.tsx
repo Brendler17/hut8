@@ -1,13 +1,43 @@
+import { useEffect, useState } from 'react';
 import { Contato } from '../../components/Contato';
 import { Footer } from '../../components/Footer';
 import { MemberCard } from '../../components/MemberCard';
 import { MenuItems } from '../../components/Menu-Items';
 import { Rectangle } from '../../components/Rectangle';
+import vectorUrl from '../../assets/vector.svg';
+import { getTeam } from '../../services/api';
 import styles from './styles.module.css';
 
+interface Member {
+  id: number;
+  name: string;
+  role: 'teachers' | 'directors' | 'counselors' | 'associated';
+  areaOfActivity: string;
+  social: {
+    instagram: string;
+    linkedin: string;
+    github?: string;
+    behance?: string;
+  };
+}
+
 export function NossaEquipe() {
+  const [team, setTeam] = useState<Member[]>([]);
+
+  useEffect(() => {
+    getTeam().then(setTeam).catch(console.error);
+  }, []);
+
+  const teachers = team.filter((m) => m.role === 'teachers');
+  const directors = team.filter((m) => m.role === 'directors');
+  const counselors = team.filter((m) => m.role === 'counselors');
+  const associated = team.filter((m) => m.role === 'associated');
+
   return (
     <div className={styles.page}>
+      <img src={vectorUrl} className={styles.vectorLeft} alt="" aria-hidden="true" />
+      <img src={vectorUrl} className={styles.vectorRight} alt="" aria-hidden="true" />
+
       <div className={styles.container}>
         <MenuItems />
         <Rectangle
@@ -22,20 +52,16 @@ export function NossaEquipe() {
             um acompanhamento a distância do projeto.
           </p>
           <div className={styles.cards}>
-            <MemberCard
-              name="Larissa de Freitas"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Tobias Mulling"
-              role="Coordenador Design UFPel"
-              instagram="#"
-              linkedin="#"
-              behance="#"
-            />
+            {teachers.map((m) => (
+              <MemberCard
+                key={m.id}
+                name={m.name}
+                role={m.areaOfActivity}
+                instagram={m.social.instagram}
+                linkedin={m.social.linkedin}
+                behance={m.social.behance}
+              />
+            ))}
           </div>
         </section>
 
@@ -46,34 +72,16 @@ export function NossaEquipe() {
             diretoria. Cargo eletivo em modelo anual.
           </p>
           <div className={styles.cards}>
-            <MemberCard
-              name="Samuel Lettnin"
-              role="Diretor Geral de dev"
-              instagram="#"
-              linkedin="#"
-              github="#"
-            />
-            <MemberCard
-              name="Augusto Menchaca"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-            />
-            <MemberCard
-              name="Inácio Teixeira"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-            />
+            {directors.map((m) => (
+              <MemberCard
+                key={m.id}
+                name={m.name}
+                role={m.areaOfActivity}
+                instagram={m.social.instagram}
+                linkedin={m.social.linkedin}
+                github={m.social.github}
+              />
+            ))}
           </div>
         </section>
 
@@ -84,27 +92,16 @@ export function NossaEquipe() {
             empresa. Cargo eletivo em modelo semestral.
           </p>
           <div className={styles.cards}>
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-            />
+            {counselors.map((m) => (
+              <MemberCard
+                key={m.id}
+                name={m.name}
+                role={m.areaOfActivity}
+                instagram={m.social.instagram}
+                linkedin={m.social.linkedin}
+                github={m.social.github}
+              />
+            ))}
           </div>
         </section>
 
@@ -117,99 +114,17 @@ export function NossaEquipe() {
             Atuam nos projetos técnicos e recebem horas de ensino e extensão.
           </p>
           <div className={styles.cards}>
-            <MemberCard
-              name="Amanda Schiller"
-              role="Designer"
-              instagram="#"
-              linkedin="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Ruan Rodrigues"
-              role="Designer"
-              instagram="#"
-              linkedin="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Amanda Vieira"
-              role="Designer"
-              instagram="#"
-              linkedin="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-              behance="#"
-            />
-            <MemberCard
-              name="Nome e sobrenome"
-              role="área de atuação"
-              instagram="#"
-              linkedin="#"
-              github="#"
-              behance="#"
-            />
+            {associated.map((m) => (
+              <MemberCard
+                key={m.id}
+                name={m.name}
+                role={m.areaOfActivity}
+                instagram={m.social.instagram}
+                linkedin={m.social.linkedin}
+                github={m.social.github}
+                behance={m.social.behance}
+              />
+            ))}
           </div>
         </section>
 
