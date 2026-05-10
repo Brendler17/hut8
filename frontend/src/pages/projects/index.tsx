@@ -45,7 +45,7 @@ export function Projects() {
           text="Pessoas que confiaram na Hut8 e tiveram sua presença digital renovada"
         />
 
-        {projects.map((project) => (
+        {projects.map(project => (
           <CarouselProjects
             key={project.id}
             title={project.name}
@@ -54,7 +54,7 @@ export function Projects() {
             link1={project.link1}
             link2={project.link2}
             link3={project.link3}
-            images={project.images.map((img) => projectImages[img])}
+            images={project.images.map(img => projectImages[img])}
           />
         ))}
 
